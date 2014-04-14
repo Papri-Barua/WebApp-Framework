@@ -9,11 +9,11 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>Generic</module>
-        <module>Amazon</module>
+        <module>eBay</module>
         <module>LinkedIn</module>
         <module>MetLife</module>
         <module>NYTimes</module>
-    </modules>
+        </modules>
 
     <packaging>pom</packaging>
     <name>WebApp-Framework</name>
@@ -74,7 +74,7 @@
             <id>all</id>
             <modules>
                 <module>Generic</module>
-                <module>Amazon</module>
+                <module>eBay</module>
                 <module>LinkedIn</module>
                 <module>MetLife</module>
                 <module>NYTimes</module>
@@ -86,10 +86,10 @@
 
         </profile>
         <profile>
-            <id>Amazon-app</id>
+            <id>eBay-app</id>
             <modules>
                 <module>Generic</module>
-                <module>Amazon</module>
+                <module>eBay</module>
                 <module>LinkedIn</module>
                 <module>MetLife</module>
                 <module>NYTimes</module>
@@ -99,7 +99,7 @@
             <id>LinkedIn-app</id>
             <modules>
                 <module>Generic</module>
-                <module>Amazon</module>
+                <module>eBay</module>
                 <module>LinkedIn</module>
                 <module>MetLife</module>
                 <module>NYTimes</module>
@@ -109,7 +109,7 @@
             <id>MetLife-app</id>
             <modules>
                 <module>Generic</module>
-                <module>Amazon</module>
+                <module>eBay</module>
                 <module>LinkedIn</module>
                 <module>MetLife</module>
                 <module>NYTimes</module>
@@ -119,7 +119,7 @@
             <id>NewYorkTimes-app</id>
             <modules>
                 <module>Generic</module>
-                <module>Amazon</module>
+                <module>eBay</module>
                 <module>LinkedIn</module>
                 <module>MetLife</module>
                 <module>NYTimes</module>
