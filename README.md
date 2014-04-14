@@ -1,4 +1,4 @@
-WebApp-Framework-test1
+WebApp-Framework
 ======================
 
 Initial Framework Setup
