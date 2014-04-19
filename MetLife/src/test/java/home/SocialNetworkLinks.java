@@ -1,11 +1,11 @@
 package home;
 
 import base.Base;
-import org.junit.Test;
+import org.testng.annotations.Test;
 import org.openqa.selenium.By;
 
 /**
- * Created by Prithul on 4/19/2014.
+ * Created by Fatima on 4/19/2014.
  */
 public class SocialNetworkLinks extends Base {
 

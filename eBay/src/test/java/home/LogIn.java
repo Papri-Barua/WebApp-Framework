@@ -1,7 +1,7 @@
 package home;
 
 import base.Base;
-import org.junit.Test;
+import org.testng.annotations.Test;
 
 /**
  * Created by Prithul on 4/14/2014.

@@ -15,7 +15,7 @@
     <name>NYTimes</name>
 
     <properties>
-        <testRunner>runner.xml</testRunner>
+        <testRunner>NYTimesrunner.xml</testRunner>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
@@ -27,7 +27,7 @@
                 <version>2.14.1</version>
                 <configuration>
                     <suiteXmlFiles>
-                        <suitXmlFile>target/test-classes/${testRunner}</suitXmlFile>
+                        <suitXmlFile>target/test-classes/${testRunner4}</suitXmlFile>
                     </suiteXmlFiles>
                 </configuration>
             </plugin>

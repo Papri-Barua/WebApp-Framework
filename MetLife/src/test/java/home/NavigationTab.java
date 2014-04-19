@@ -1,13 +1,13 @@
 package home;
 
-import org.junit.Test;
+import org.testng.annotations.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
 import java.util.List;
 
 /**
- * Created by Prithul on 4/19/2014.
+ * Created by Fatima on 4/19/2014.
  */
 public class NavigationTab extends NavTab {
 
@@ -23,7 +23,7 @@ public class NavigationTab extends NavTab {
             }else{
 
                 navTabLinks.get(i).findElement(By.tagName("a")).click();
-                if(i==6){
+                if(i==7){
                     navTabLinks = getWebEelementsByCss("#hdMenuDiv li");
                     System.out.println("----------------- " +navTabLinks.get(i).getText()+" --------------------");
                     clickOnTabs(".//*[@id='hdMenuDiv']/ul/li[1]/a");

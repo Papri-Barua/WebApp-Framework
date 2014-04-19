@@ -6,9 +6,11 @@ import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
 /**
- * Created by Prithul on 4/19/2014.
+ * Created by Fatima on 4/19/2014.
  */
 public class ErrorCondition extends Base {
+
+
 
     @Test
     public void RegisterNowNextStep() {

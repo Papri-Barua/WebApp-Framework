@@ -7,7 +7,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import java.util.concurrent.TimeUnit;
 
 /**
- * Created by Prithul on 4/19/2014.
+ * Created by Fatima on 4/19/2014.
  */
 public class MetlifeValidation extends Base {
 
