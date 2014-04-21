@@ -15,7 +15,7 @@
     <name>MetLife</name>
 
     <properties>
-        <testRunner>runner.xml</testRunner>
+        <testRunner3>MetLiferunner.xml</testRunner3>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
@@ -27,7 +27,7 @@
                 <version>2.14.1</version>
                 <configuration>
                     <suiteXmlFiles>
-                        <suitXmlFile>target/test-classes/${testRunner}</suitXmlFile>
+                        <suitXmlFile>target/test-classes/${testRunner3}</suitXmlFile>
                     </suiteXmlFiles>
                 </configuration>
             </plugin>
@@ -52,6 +52,14 @@
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-server</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.saucelabs</groupId>
+            <artifactId>sauce-rest-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi</artifactId>
         </dependency>
     </dependencies>
 
