@@ -90,38 +90,26 @@
             <modules>
                 <module>Generic</module>
                 <module>eBay</module>
-                <module>LinkedIn</module>
-                <module>MetLife</module>
-                <module>NYTimes</module>
             </modules>
         </profile>
         <profile>
             <id>LinkedIn-app</id>
             <modules>
                 <module>Generic</module>
-                <module>eBay</module>
                 <module>LinkedIn</module>
-                <module>MetLife</module>
-                <module>NYTimes</module>
             </modules>
         </profile>
         <profile>
             <id>MetLife-app</id>
             <modules>
                 <module>Generic</module>
-                <module>eBay</module>
-                <module>LinkedIn</module>
                 <module>MetLife</module>
-                <module>NYTimes</module>
             </modules>
         </profile>
         <profile>
-            <id>NewYorkTimes-app</id>
+            <id>NYTimes-app</id>
             <modules>
                 <module>Generic</module>
-                <module>eBay</module>
-                <module>LinkedIn</module>
-                <module>MetLife</module>
                 <module>NYTimes</module>
             </modules>
         </profile>
