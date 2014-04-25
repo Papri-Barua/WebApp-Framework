@@ -2,10 +2,13 @@ package home;
 
 
 import base.Base;
-import org.junit.Test;
+//import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.Test;
+
+
 
 
 
@@ -54,12 +57,6 @@ public class DropDownMenu extends Base{
         driver.findElement(By.id("submitBtnImage")).click();
 
 
-        // for customer service
-
-	/*WebElement element1 = driver.findElement(By.id("Customer Service"));
-	WebElement element2 = driver.findElement(By.id("custservice"));
-	Select select = new Select(element2);
-	select.selectByVisibleText("Pay a Bill");*/
 
 
     }

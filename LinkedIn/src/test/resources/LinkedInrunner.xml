@@ -5,7 +5,7 @@
     <!-- If useSauce is false then all tests are on local-->
     <parameter name="userName" value="Your sauce username"/>
     <parameter name="key" value="Your sauce access key"/>
-    <parameter name="useSauceLabs" value="true"/>
+    <parameter name="useSauceLabs" value="false"/>
     <!--<parameter name="localPlatform" value="false"/>-->
     <parameter name="url" value="http://www.linkedin.com"/>
     <!--<parameter name="userName" value=""/>-->
@@ -20,7 +20,7 @@
         <parameter name="browserVersion" value="27"/>
         <!--<parameter name="browser" value="safari"/>-->
         <classes>
-            <class name="packagename.classname"/>
+            <class name="myTests.WebDriverTest"/>
 
         </classes>
     </test>

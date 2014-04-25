@@ -1,11 +1,11 @@
-package home;
+package MetLifeCommon;
 
 import base.Base;
 import java.util.List;
 
 
 /**
- * Created by Prithul on 4/19/2014.
+ * Created by Fatima on 4/19/2014.
  */
 public class NavTab extends Base {
 

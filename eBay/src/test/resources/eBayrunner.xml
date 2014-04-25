@@ -1,33 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite parallel="tests" name="eBay UI Tests">
+<suite parallel="tests" name="Cnn UI Tests">
     <!-- If useSauce is false then all tests are on local-->
     <parameter name="userName" value="baruapapri"/>
     <parameter name="key" value="99f7438e-0e00-412c-bac3-23b41ad9a889"/>
-    <parameter name="useSauceLabs" value="false"/>
-    <parameter name="localPlatform" value="true"/>
-    <parameter name="url" value="http://www.ebay.com"/>
+    <parameter name="useSauceLabs" value="true"/>
+    <!--<parameter name="localPlatform" value="false"/>-->
+    <parameter name="url" value="http://www.eBay.com"/>
     <!--<parameter name="userName" value=""/>-->
     <parameter name="password" value=""/>
     <parameter name="" value=""/>
     <parameter name="" value=""/>
     <parameter name="" value=""/>
-    <test name="eBay on VISTA with firefox Tests">
+    <test name="Cnn on VISTA with firefox Tests">
         <parameter name="os" value="Windows 8"/>
         <!--<parameter name="browser" value="googlechrome"/>-->
         <parameter name="browser" value="firefox"/>
-        <parameter name="browserVersion" value="28"/>
+        <parameter name="browserVersion" value="27"/>
         <!--<parameter name="browser" value="safari"/>-->
         <classes>
-            <!--<class name="home.CompanyInfo"/>-->
-            <!--<class name="home.LogIn"/>-->
-            <!--<class name="home.DropDownOption"/>-->
-            <!--<class name="home.NavigationTab"/>-->
-            <!--<class name="home.LinkTest"/>-->
-            <class name="home.SearchBox"/>
-            <!--<class name="home.StayConnected"/>-->
-            <!--<class name="home.DealsLinkTest"/>-->
+            <class name="home.NavigationTab"/>
+            <class name="home.LogIn"/>
 
         </classes>
     </test>

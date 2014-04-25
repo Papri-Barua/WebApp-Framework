@@ -15,7 +15,7 @@
     <name>NYTimes</name>
 
     <properties>
-        <testRunner4>NYTimesrunner.xml</testRunner4>
+        <testRunner>runner.xml</testRunner>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
@@ -27,7 +27,7 @@
                 <version>2.14.1</version>
                 <configuration>
                     <suiteXmlFiles>
-                        <suitXmlFile>target/test-classes/${testRunner4}</suitXmlFile>
+                        <suitXmlFile>target/test-classes/${testRunner}</suitXmlFile>
                     </suiteXmlFiles>
                 </configuration>
             </plugin>
@@ -52,14 +52,6 @@
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-server</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.saucelabs</groupId>
-            <artifactId>sauce-rest-api</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.poi</groupId>
-            <artifactId>poi</artifactId>
         </dependency>
     </dependencies>
 

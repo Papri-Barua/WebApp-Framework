@@ -30,7 +30,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="Amazon" target="1.7" />
+      <module name="eBay" target="1.7" />
       <module name="Generic" target="1.7" />
       <module name="LinkedIn" target="1.7" />
       <module name="MetLife" target="1.7" />

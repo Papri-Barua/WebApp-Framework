@@ -6,14 +6,16 @@ import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
 /**
- * Created by Prithul on 4/19/2014.
+ * Created by Fatima on 4/19/2014.
  */
 public class ErrorCondition extends Base {
+
+
 
     @Test
     public void RegisterNowNextStep() {
 
-        driver.findElement(By.xpath(".//*[@id='registerLink']/a")).click();
+        driver.findElement(By.cssSelector(".registerLink")).click();
 
         //switch to iframe
         WebElement iframe = driver.findElement(By.cssSelector(".dijitDialogPaneContent iframe:nth-child(1)"));
@@ -27,6 +29,7 @@ public class ErrorCondition extends Base {
         driver.findElement(By.cssSelector("#dijit_form_Button_3_label")).click();
 
         driver.switchTo().defaultContent();
+        driver.close();
 
     }
 

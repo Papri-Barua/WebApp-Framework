@@ -16,6 +16,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
 
 import java.io.IOException;
 import java.net.URL;
@@ -31,15 +32,17 @@ public class Base {
     public WebDriver driver = null;
 
     @Parameters({"useSauceLabs","userName", "key", "os", "browser", "browserVersion","url"})
+
     @BeforeClass
     public void setUp(boolean useSauceLabs,String userName,String key,String os, String browser,String browserVersion,
-                      String url) throws IOException {
-        if(useSauceLabs==true){
-            setUpSauce(userName,key,os,browser,browserVersion,url);
-        }else{ getDriver(browser,url);
+                     String url) throws IOException {
+       if(useSauceLabs==true){
+           setUpSauce(userName,key,os,browser,browserVersion,url);
+       }else{
+           getDriver(browser,url);
 
         }
-    }
+   }
     //driver to run on SauceLabs
     public void setUpSauce(String userName,String key,String os, String browser,String browserVersion,
                            String url) throws IOException {
@@ -47,33 +50,40 @@ public class Base {
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setBrowserName(browser);
         capabilities.setCapability("version", browserVersion);
-        capabilities.setCapability("platform", os);
+       capabilities.setCapability("platform", os);
         this.driver = new RemoteWebDriver(
-                new URL("http://" + userName + ":" + key + "@ondemand.saucelabs.com:80/wd/hub"),
+               new URL("http://" + userName + ":" + key + "@ondemand.saucelabs.com:80/wd/hub"),
                 capabilities);
-        driver.navigate().to(url);
+       driver.navigate().to(url);
         driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
         driver.manage().window().maximize();
     }
-    //driver to run on local
-    public WebDriver getDriver(String browser,String url) {
+   //driver to run on local
+   public WebDriver getDriver(String browser,String url) {
         if(browser.equalsIgnoreCase("firefox")){
-            driver = new FirefoxDriver();
-        } else if(browser.equalsIgnoreCase("safari")){
-            driver = new SafariDriver();
+           driver = new FirefoxDriver();
+       } else if(browser.equalsIgnoreCase("safari")){
+           driver = new SafariDriver();
         } else if(browser.equalsIgnoreCase("chrome")){
             System.setProperty("webdriver.chrome.driver", System.setProperty("path","path"));
-            driver = new ChromeDriver();
-        } else if(browser.equalsIgnoreCase("internetexplorer")){
+           driver = new ChromeDriver();
+       } else if(browser.equalsIgnoreCase("internetexplorer")){
             driver = new InternetExplorerDriver();
-        }
-        driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
-        driver.navigate().to(url);
-        driver.manage().window().maximize();
+       }
+       driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
+       driver.navigate().to(url);
+       driver.manage().window().maximize();
 
         return driver;
     }
 
+  //@BeforeClass
+    public void setUp() throws Exception {
+        driver = new FirefoxDriver();
+        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+        driver.navigate().to("http://www.metlife.com");
+        driver.manage().window().maximize();
+    }
     @AfterClass
     public void tearDown() throws Exception {
         driver.close();
