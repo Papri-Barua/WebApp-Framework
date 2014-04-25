@@ -57,12 +57,6 @@ public class DropDownMenu extends Base{
         driver.findElement(By.id("submitBtnImage")).click();
 
 
-        // for customer service
-
-	/*WebElement element1 = driver.findElement(By.id("Customer Service"));
-	WebElement element2 = driver.findElement(By.id("custservice"));
-	Select select = new Select(element2);
-	select.selectByVisibleText("Pay a Bill");*/
 
 
     }
