@@ -15,7 +15,7 @@
     <name>LinkedIn</name>
 
     <properties>
-        <testRunner>LinkedInrunner.xml</testRunner>
+        <testRunner>runner.xml</testRunner>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
@@ -27,7 +27,7 @@
                 <version>2.14.1</version>
                 <configuration>
                     <suiteXmlFiles>
-                        <suitXmlFile>target/test-classes/${testRunner3}</suitXmlFile>
+                        <suitXmlFile>target/test-classes/${testRunner}</suitXmlFile>
                     </suiteXmlFiles>
                 </configuration>
             </plugin>

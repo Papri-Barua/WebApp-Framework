@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite parallel="tests" name="Cnn UI Tests">
+<suite parallel="tests" name="NYTimes UI Tests">
     <!-- If useSauce is false then all tests are on local-->
     <parameter name="userName" value="Your sauce username"/>
     <parameter name="key" value="Your sauce access key"/>
