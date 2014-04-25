@@ -14,7 +14,7 @@ import org.openqa.selenium.support.ui.Select;
 /**
  * Created by zayan on 4/23/14.
  */
-public class NavigationUsingDropDown extends Base {
+public class CustomerServiceUsingDropDown extends Base {
 
     //@Test
     public void selectElementByOptionMenu() throws InterruptedException{
